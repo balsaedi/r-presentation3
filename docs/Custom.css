@@ -1,0 +1,132 @@
+/* Custom CSS for ioslides presentation */
+
+slides > slide {
+  background-color: #f8f8f8;
+  border-bottom: 3px solid #3c78d8;
+}
+
+slides > slide.title-slide {
+  background-color: #3c78d8;
+  color: white;
+}
+
+slides > slide.title-slide h1,
+slides > slide.title-slide h2,
+slides > slide.title-slide h3 {
+  color: white;
+}
+
+h1, h2, h3 {
+  color: #3c78d8;
+  font-weight: 600;
+}
+
+slides > slide.backdrop {
+  background-color: #e8e8e8;
+}
+
+pre, code {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.col-left {
+  float: left;
+  width: 48%;
+}
+
+.col-right {
+  float: right;
+  width: 48%;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.6em;
+  color: #666;
+}
+
+.emphasized {
+  font-weight: bold;
+  color: #d81b60;
+}
+
+.centered {
+  text-align: center;
+}
+
+blockquote {
+  background-color: #f9f9f9;
+  border-left: 5px solid #3c78d8;
+  padding: 10px 20px;
+  margin: 15px 0;
+  font-style: italic;
+}
+
+table {
+  margin: 15px 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #3c78d8;
+  color: white;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Animation classes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* List styling */
+ul, ol {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Code highlight colors */
+.hljs-keyword {
+  color: #0000ff;
+}
+
+.hljs-string {
+  color: #008000;
+}
+
+.hljs-number {
+  color: #d81b60;
+}
+
+.hljs-comment {
+  color: #808080;
+  font-style: italic;
+}
